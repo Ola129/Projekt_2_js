@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kalkulator</title>
+    <!-- <link rel="stylesheet" href="style/reset.css" /> -->
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <div id="currencyContainer">
+      <div class="title">
+        <i class="fa-solid fa-sterling-sign fa-2x"></i>
+        <i class="fa-solid fa-dollar-sign fa-6x"></i>
+        <i class="fa-solid fa-euro-sign fa-2x"></i>
+        <h1>Przelicznik Walut</h1>
+      </div>
+      <form id="convertForm">
+        <div>
+          <label for="amount">Kwota</label>
+          <input type="number" id="amount" value="0" />
+        </div>
+        <div>
+          <label for="fromCurrency">Z</label>
+          <select id="fromCurrency"></select>
+        </div>
+        <div>
+          <label for="toCurrency">Na</label>
+          <select id="toCurrency"></select>
+        </div>
+        <button>Przelicz</button>
+      </form>
+      <div id="convertResult"></div>
+    </div>
+    <script src="index.js"></script>
+    <script
+      src="https://kit.fontawesome.com/608a507e7d.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
