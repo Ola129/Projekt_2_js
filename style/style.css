@@ -11,7 +11,7 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: rgb(118, 45, 118);
+  background-color: rgb(235, 162, 235);
 }
 #currencyContainer {
   padding: 50px 70px;
