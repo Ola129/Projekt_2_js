@@ -27,7 +27,8 @@ class CurrencyConverter {
   }
 
   setupEventListeners() {
-    this.buttonElement.addEventListener("click", () => {
+    this.buttonElement.addEventListener("click", (event) => {
+      event.preventDefault();
       const rate = this.rates[this.selectElement.value];
       const amount = this.inputElement.value;
       const result = amount * rate;

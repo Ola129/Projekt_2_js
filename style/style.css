@@ -6,12 +6,11 @@ html {
   height: 100%;
 }
 body {
-  height: 100%;
+  background-image: url("pics/world.webp");
+  background-size: cover;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  background-color: rgb(235, 162, 235);
 }
 #currencyContainer {
   padding: 50px 70px;
@@ -31,8 +30,12 @@ body {
 
 #convertForm > div > label {
   font-weight: 900;
-  font-size: 12px;
+  font-size: 14px;
   margin: 6px 0;
+}
+#convertForm > div > label > {
+  font-weight: bold;
+  font-size: 14px;
 }
 #convertForm > div > input,
 #convertForm > div > select {
@@ -60,4 +63,7 @@ body {
   background-color: red;
   color: white;
   padding: 20px;
+}
+#result {
+  font-weight: bold;
 }
