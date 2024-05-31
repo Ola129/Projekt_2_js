@@ -15,7 +15,7 @@ class CurrencyConverter {
     this.loaderElement.style.display = "block";
     this.currencies.forEach((currency) => {
       fetch(
-        `http://api.nbp.pl/api/exchangerates/rates/A/${currency}/?format=json`
+        `https://api.nbp.pl/api/exchangerates/rates/A/${currency}/?format=json`
       )
         .then((response) => response.json())
         .then((data) => {
