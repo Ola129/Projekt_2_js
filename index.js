@@ -33,10 +33,6 @@ class CurrencyConverter {
       const amount = this.inputElement.value;
       const result = amount * rate;
       this.resultElement.textContent = `Wynik: ${result.toFixed(2)} PLN`;
-
-      setTimeout(() => {
-        this.resultElement.textContent = "";
-      }, 300000);
     });
   }
 
