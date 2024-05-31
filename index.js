@@ -8,9 +8,11 @@ class CurrencyConverter {
     this.inputElement = document.querySelector("input");
     this.resultElement = document.querySelector("#result");
     this.buttonElement = document.querySelector("button");
+    this.loaderElement = document.querySelector("#loader");
   }
 
   fetchRates() {
+    this.loaderElement.style.display = "block";
     this.currencies.forEach((currency) => {
       fetch(
         `http://api.nbp.pl/api/exchangerates/rates/A/${currency}/?format=json`
@@ -22,6 +24,7 @@ class CurrencyConverter {
           option.text = `${data.code} - ${data.currency}`;
           option.value = currency;
           this.selectElement.add(option);
+          this.loaderElement.style.display = "none";
         });
     });
   }
