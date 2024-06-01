@@ -9,6 +9,7 @@ class CurrencyConverter {
     this.resultElement = document.querySelector("#result");
     this.buttonElement = document.querySelector("#convert-button");
     this.loaderElement = document.querySelector("#loader");
+    this.formElement = document.querySelector("#currency-form");
 
     document
       .getElementById("reset-button")
@@ -44,7 +45,7 @@ class CurrencyConverter {
   }
 
   setupEventListeners() {
-    this.buttonElement.addEventListener("click", async (event) => {
+    this.formElement.addEventListener("submit", async (event) => {
       event.preventDefault();
       const currency = this.selectElement.value;
       if (!this.rates[currency]) {
