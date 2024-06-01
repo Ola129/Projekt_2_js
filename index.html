@@ -7,28 +7,28 @@
     <link rel="stylesheet" href="style/style.css" />
   </head>
   <body>
-    <div id="loader" style="display: none">Loading...</div>
-    <div id="currencyContainer">
+    <div class="loader" id="loader">Loading...</div>
+    <div class="currencyContainer">
       <header class="title">
         <i class="fa-solid fa-sterling-sign fa-2x"></i>
         <i class="fa-solid fa-dollar-sign fa-6x"></i>
         <i class="fa-solid fa-euro-sign fa-2x"></i>
-        <h1>Przelicznik Walut</h1>
+        <h1 class="appName">Przelicznik Walut</h1>
       </header>
       <form id="convertForm">
         <div>
-          <label>Kwota</label>
-          <input type="number" id="amount-input" value="" />
+          <label class="label">Kwota</label>
+          <input class="amount" type="number" id="amount-input" value="" />
         </div>
         <div>
-          <select id="currency-select"></select>
+          <select class="currencySelect" id="currency-select"></select>
         </div>
         <div>
-          <label>to</label>
+          <label class="label">to</label>
         </div>
-        <button id="convert-button">Przelicz</button>
-        <div id="result"></div>
-        <button>Wyczyść</button>
+        <button class="btn" id="convert-button">Przelicz</button>
+        <div class="result" id="result"></div>
+        <button class="btn" id="reset-button">Wyczyść</button>
       </form>
     </div>
     <script src="index.js"></script>
