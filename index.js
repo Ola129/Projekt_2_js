@@ -36,6 +36,7 @@ class CurrencyConverter {
       );
       const data = await response.json();
       this.rates[currency] = data.rates[0]?.mid;
+      this.errorElement.textContent = "";
     } catch (error) {
       console.error("Wystąpił błąd podczas pobierania danych", error);
       this.errorElement.textContent =
