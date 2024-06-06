@@ -6,6 +6,7 @@ class CurrencyConverter {
     this.rates = {};
     this.selectElement = document.querySelector("#currency-select");
     this.inputElement = document.querySelector("#amount-input");
+    this.inputElement.setAttribute("step", "0.01");
     this.resultElement = document.querySelector("#result");
     this.buttonElement = document.querySelector("#convert-button");
     this.loaderElement = document.querySelector("#loader");
